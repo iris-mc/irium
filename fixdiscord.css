@@ -1,6 +1,8 @@
 @import url("https://scattagain.github.io/VencordStuff/css/GuildbarRevert.css");
 @import url('https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/desktop.css');
 @import url("https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/customStatusBubble.css");
+@import url("https://nspc911.github.io/themes/vencord/ChatRelatedAlertsAtTop.theme.css");
+@import url("https://nspc911.github.io/themes/vencord/RefreshedSeamlessChatBar.theme.css");
 /* remove Status Reactions */
 [class^='popover']{
 display: none;
@@ -132,10 +134,27 @@ display: none;
 .tutorialContainer__1f388 {
     padding: 0px 
 }
-@import url("https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/customStatusBubble.css");
+:root {
+    /* Set to 1 if you want them to float  *\
+    |*      Recommended while using        *|
+    \*      Midnight/Rounded Themes        */
+    --craat-popout: 0; /* Default = 0 */
+    /* Change the border radius *\
+    \*      for the alerts      */
+    --craat-border-radius: 16px; /* default: 16px */
+}
+:root {
+    /* change padding of the bar */
+     --rscb-chat-box-padding: 8px; /* default is 8px for alignment */
+}
+}
 
+button[aria-label="Send a gift"] {
+  display: none !important;
+}
 :root {
   /* Only include this part if you wish to change these variables */
-  --add-custom-status-text: "my penis hurts :(";
+  --add-custom-status-text: "my penis hurt :(";
   --add-custom-status-text-margin: 4px;
 }
+
